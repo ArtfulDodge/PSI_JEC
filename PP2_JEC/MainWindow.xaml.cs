@@ -30,6 +30,7 @@ namespace PP2_JEC
         {
             int PSI = 0;
             int age = 0;
+            bool allPointsFromAge = true;
             String sex;
             int nursingHome = 0;
             int cancer = 0;
@@ -77,6 +78,10 @@ namespace PP2_JEC
             if (respiratoryRate >= 30)
             {
                 PSI += 20;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             try
@@ -91,6 +96,10 @@ namespace PP2_JEC
             if (bloodPressure < 90)
             {
                 PSI += 20;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             try
@@ -108,6 +117,10 @@ namespace PP2_JEC
                 if (temperature < 35 || temperature > 39.9)
                 {
                     PSI += 15;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             } else if (rdoFahrenheit.IsChecked == true)
             {
@@ -115,6 +128,10 @@ namespace PP2_JEC
                 if (temperature < 95 || temperature > 103.8)
                 {
                     PSI += 15;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             }
 
@@ -131,6 +148,10 @@ namespace PP2_JEC
             if (pulse >= 125)
             {
                 PSI += 10;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             try
@@ -146,6 +167,10 @@ namespace PP2_JEC
             if (pH < 7.35)
             {
                 PSI += 30;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             try
@@ -163,6 +188,10 @@ namespace PP2_JEC
                 if (BUN >= 30)
                 {
                     PSI += 20;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             } else if (rdoBUNmmol.IsChecked == true)
             {
@@ -170,6 +199,10 @@ namespace PP2_JEC
                 if (BUN >= 11)
                 {
                     PSI += 20;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             }
 
@@ -186,6 +219,10 @@ namespace PP2_JEC
             if (sodium < 130)
             {
                 PSI += 20;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             try
@@ -203,6 +240,10 @@ namespace PP2_JEC
                 if (glucose >= 250)
                 {
                     PSI += 10;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             } else if (rdoGlucoseMmol.IsChecked == true)
             {
@@ -210,6 +251,10 @@ namespace PP2_JEC
                 if (glucose >= 14)
                 {
                     PSI += 10;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             }
 
@@ -226,6 +271,10 @@ namespace PP2_JEC
             if (hematocrit < 30)
             {
                 PSI += 10;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             try
@@ -243,6 +292,10 @@ namespace PP2_JEC
                 if (oxygenPressure < 60)
                 {
                     PSI += 10;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             } else if (rdoOxygenKPa.IsChecked == true)
             {
@@ -250,6 +303,10 @@ namespace PP2_JEC
                 if (oxygenPressure < 8)
                 {
                     PSI += 10;
+                    if (allPointsFromAge)
+                    {
+                        allPointsFromAge = false;
+                    }
                 }
             }
 
@@ -270,54 +327,86 @@ namespace PP2_JEC
             {
                 PSI += 10;
                 nursingHome = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkCancer.IsChecked == true)
             {
                 PSI += 30;
                 cancer = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkLiverDisease.IsChecked == true)
             {
                 PSI += 20;
                 liverDisease = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkHeartFailure.IsChecked == true)
             {
                 PSI += 10;
                 heartFailure = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkCerebrovascularDisease.IsChecked == true)
             {
                 PSI += 10;
                 cerebrovascularDisease = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkRenalDisease.IsChecked == true)
             {
                 PSI += 10;
                 renalDisease = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkMentalStatus.IsChecked == true)
             {
                 PSI += 20;
                 alteredMentalStatus = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             if (chkPleuralEffusion.IsChecked == true)
             {
                 PSI += 10;
                 pleuralEffusion = 1;
+                if (allPointsFromAge)
+                {
+                    allPointsFromAge = false;
+                }
             }
 
             String riskClass;
             String admissionStatus = "Outpatient Care";
 
-            if (PSI <= 0)
+            if (PSI <= 0 || allPointsFromAge)
             {
                 riskClass = "I";
             } else if (PSI <= 70)

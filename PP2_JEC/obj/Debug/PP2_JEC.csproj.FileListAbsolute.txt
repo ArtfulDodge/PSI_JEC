@@ -12,3 +12,17 @@ E:\SchoolWorkspace\311_Projects\PP2_JEC\PP2_JEC\obj\Debug\PP2_JEC.Properties.Res
 E:\SchoolWorkspace\311_Projects\PP2_JEC\PP2_JEC\obj\Debug\PP2_JEC.csproj.GenerateResource.cache
 E:\SchoolWorkspace\311_Projects\PP2_JEC\PP2_JEC\obj\Debug\PP2_JEC.exe
 E:\SchoolWorkspace\311_Projects\PP2_JEC\PP2_JEC\obj\Debug\PP2_JEC.pdb
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\bin\Debug\PP2_JEC.exe.config
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\bin\Debug\PP2_JEC.exe
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\bin\Debug\PP2_JEC.pdb
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC.csprojAssemblyReference.cache
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\MainWindow.g.cs
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\App.g.cs
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC_MarkupCompile.cache
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC_MarkupCompile.lref
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\MainWindow.baml
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC.g.resources
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC.Properties.Resources.resources
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC.csproj.GenerateResource.cache
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC.exe
+C:\Users\jcoff\source\repos\PSI_JEC\PP2_JEC\obj\Debug\PP2_JEC.pdb
